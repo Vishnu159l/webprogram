@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Lab-5</title>
+		<link rel="stylesheet" href="index.css">
+		<style>
+		#main {
+            font-family: 'Verdana', sans-serif;
+            padding: 40px;
+            width: 800px;
+			margin: auto;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+         .csshead {
+            background: #2196F3;
+            color: white;
+            padding: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+			width: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            padding: 25px;
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.8;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .box {
+            background: #ff9800;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+		</style>
+	</head>
+	<body>
+		<h1>Image Mapping</h1>
+		<map name="webdev">
+			<area href="https://en.wikipedia.org/wiki/CSS" alt="page not found" target="_blank" shape="poly" coords="0,132,180,193,180,0">
+			<area href="https://en.wikipedia.org/wiki/HTTP" alt="page not found" target="_blank" shape="poly" coords="360,132,180,193,180,0">
+			<area href="https://en.wikipedia.org/wiki/HTML" alt="page not found" target="_blank" shape="poly" coords="360,132,180,193,290,346">
+			<area href="https://en.wikipedia.org/wiki/JavaScript" alt="page not found" target="_blank" shape="poly" coords="290,346,180,193,70,346">
+			<area href="https://en.wikipedia.org/wiki/Web_API" alt="page not found" target="_blank" shape="poly" coords="0,132,180,193,70,346">
+		</map>
+		<img src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info.png" alt="image not found" usemap="#webdev">
+		<h1>CSS</h1>
+		<div id="main">
+			<h1 class="csshead">
+				Welcome to My Stylish Page
+			</h1>
+			<div class="content">
+				<p>Explore modern web design with simple yet effective styling techniques.</p>
+			</div>
+			<div class="box-container">
+				<div class="box">Box 1</div>
+				<div class="box">Box 2</div>
+			</div>
+		</div>
+		<h1>Exercie</h1>
+		<div class="div">
+			<h1 class="login">Login Page</h1>
+			<form>
+			<h2>Login</h2>
+				<p>Email Address</p>
+				<input class="mail" type="text" placeholder="Enter your email" required><br>
+				<p>Password</p>
+				<input class="pass" type="password" placeholder="Enter your password" required><br>
+				<button>Login</button><br>
+				<a href="#">Forgot password?</a>
+			</form>
+		</div>
+	</body>
+</html>
